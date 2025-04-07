@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+
+:root {
+    --primary: #0074d9;
+    --primary-dark: #025eaf;
+    --secondary: #ffffff;
+    --text: #1d1d1d;
+    --text-gray: #d7d7d7;
+    --text-white: #ffffff;
+    --white: #ffffff;
+    --bg: #ffffff;
+    --qr-bg: #f5f5f5;
+    --qr-bg-hover: #ececec;
+    --link-bg: #dedede;
+    --link-border: #ececec;
+    --border: #dedede;
+    --error: #ff4d4d;
+    --link-color: #b7bdc6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--primary);
+    color: var(--text-dark);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Work Sans',
+    sans-serif;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: var(--bg);
+}
+
+.login-welcome-row {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+}
+
+.login-welcome-row a {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-welcome-title {
+    display: flex;
+    color: var(--text);
+    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: 
+        space-between;
+    width: 100%;
+}
+
+.qr-code {
+    width: 3rem;
+    height: 3rem;
+    background: var(--qr-bg);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    stroke: var(--white);
+    transition: background
+        .3s ease;
+    cursor: pointer;
+}
+
+.qr-code .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted
+        black;
+}
+
+.qr-code:hover {
+    background: var(--qr-bg-hover);
+}
+
+.logo {
+    margin: 0 auto;
+    width: 13.5rem;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.text-field input {
+    color: var(--text);
+    max-width: 100%;
+    width: 100%;
+    border: 1.5px solid var(
+        --border);
+    margin-top: 0.5rem;
+    min-height: 3.25rem;
+    font-size: 1rem;
+    letter-spacing: .03rem;
+    outline: none;
+    background: var(--input-bg);
+    transition: .25s;
+    border-radius: 0.75rem;
+    text-indent: 1.25rem;
+}
+
+.text-field label {
+    color: var(--text);
+}
+
+.text-field input:focus {
+    border: 1.5px solid
+        var(--primary);
+}
+
+.wrapper {
+    margin-top: 8rem;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    gap: 1rem;
+    border: 1px solid
+        var(--border);
+    width: 100%;
+    max-width: 32rem;
+    padding: 2.5rem 2rem;
+    padding-top: 0;
+    border-radius: 2rem;
+    height: fit-content;
+}
+
+.my-form__button {
+    background: var(--primary);
+    color: var(--secondary);
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    line-height: 3rem;
+    outline: none;
+    font-size: 1.125rem;
+    letter-spacing: .025rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800;
+    min-height: 3.125rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    transition: background .3s ease;
+}
+
+.my-form__button:hover {
+    background: var(--primary-dark);
+}
+
+.my-form__actions {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.my-form__actions a {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.my-form__actions a:hover {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
+.my-form__row {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip__content {
+    visibility: hidden;
+    background: var(--qr-bg);
+    border: 1px solid
+        var(--qr-bg-hover);
+    box-shadow: 0 0 0.5rem
+        rgba(0, 0, 0, 0.25);
+    color: #fff;
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 0.5rem;
+    bottom: -2.5rem;
+    left: -1.25rem;
+    border-radius: 0.25rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.confirm-text {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.confirm-text a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color .3s ease;
+}
+
+.confirm-text a:hover {
+    color: var(--primary-dark);
+}
+
+.confirm-text p {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.confirm-text input[type="checkbox"] {
+    border-radius: 0.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}

@@ -1,0 +1,104 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the results */
+.resultado-container {
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+/* Heading styles */
+h1 {
+    color: #00796b; 
+    margin-bottom: 20px; 
+}
+
+/* Score paragraph styles */
+#score {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin: 20px 0; 
+    background-color: #ffffff; 
+    padding: 10px; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px; 
+    background-color: #00796b; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 18px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #004d40; 
+}
+
+/* Flex container for charts */
+.chart-container {
+    display: flex; 
+    justify-content: space-around;
+    margin: 20px 0; 
+}
+
+/* Chart styles */
+canvas {
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    width: 100%; 
+    max-width: 400px; 
+}
+
+/* Final message styles */
+#mensajeFinal {
+    font-size: 20px; 
+    margin-top: 20px; 
+    color: #00796b; 
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .resultado-container {
+        padding: 15px; 
+    }
+
+    #score {
+        font-size: 20px; 
+    }
+
+    button {
+        font-size: 16px; 
+    }
+
+    #mensajeFinal {
+        font-size: 18px; 
+    }
+
+    .chart-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    canvas {
+        max-width: 100%; 
+        margin-bottom: 20px; 
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - AquaMind</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-top-wrapper">
+            <div class="sidebar-top">
+                <a href="main.html" class="logo__wrapper">
+                    <img src="assets/logo.svg" alt="Logo" class="logo-small">
+                    <span class="hide company-name">
+                        AquaMind
+                    </span>
+                </a>
+            </div>
+            <button class="expand-btn" type="button">
+                <img src="assets/expand-btn.svg" alt="Expand Button">
+            </button>
+        </div>
+        <div class="search__wrapper">
+            <img src="assets/search.svg" alt="Search">
+            <input 
+                type="text" placeholder="Buscar..."
+                aria-labelledby="search-icon"
+            >
+        </div>
+        <div class="sidebar-links">
+            <ul>
+                <li>
+                    <a href="main.html" title="Inicio" class="tooltip">
+                        <img src="assets/home.svg" alt="Home">
+                        <span class="link hide">Inicio</span>
+                        <span class="tooltip__content">Inicio</span>
+                    </a>
+                </li>
+            </ul>
+            <!--boton para ir al formulario, diseñado por mario -->
+            <ul>
+                <li>
+                    <!--solo cambie el Href para que nos dirja al formulario estando en la misma carpeta.-->
+                    <a href="AquaMindCalc/formulario.html", title="formulario" class="tooltip">
+                        <img src="assets/calculadora.svg" alt="formulario">
+                        <span class="link hide">Formulario</span>
+                        <span class="tooltip__content">Formulario</span>
+                    </a>
+                </li>
+            </ul>
+            <!--termina la estructura del boton-->
+            <ul>
+                <li>
+                    <a href="main.html" title="Mapa" class="tooltip">
+                        <img src="assets/map.svg" alt="Map">
+                        <span class="link hide">Mapa</span>
+                        <span class="tooltip__content">Mapa</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#home" title="Foro" class="tooltip">
+                        <img src="assets/forum.svg" alt="Forum">
+                        <span class="link hide">Foro</span>
+                        <span class="tooltip__content">Foro</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#home" title="Notificaciones" class="tooltip">
+                        <img src="assets/notifications.svg" alt="Notifications">
+                        <span class="link hide">Notificaciones</span>
+                        <span class="tooltip__content">Notificaciones</span>
+                    </a>
+                </li>
+            </ul>
+            <!--list items-->
+        </div>
+        <div class="separator"></div>
+        <div class="sidebar-links">
+            <ul>
+                <li>
+                    <a href="#settings" title="Configuración" class="tooltip">
+                        <img src="assets/settings.svg" alt="Settings">
+                        <span class="link hide">Configuración</span>
+                        <span class="tooltip__content">Configuración</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#report" title="Reportar" class="tooltip">
+                        <img src="assets/report.svg" alt="Report">
+                        <span class="link hide">Reportar</span>
+                        <span class="tooltip__content">Reportar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#support" title="Soporte" class="tooltip">
+                        <img src="assets/support.svg" alt="Support">
+                        <span class="link hide">Soporte</span>
+                        <span class="tooltip__content">Soporte</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" title="Cerrar Sesión" class="tooltip">
+                        <img src="assets/logout.svg" alt="Logout">
+                        <span class="link hide">Cerrar Sesión</span>
+                        <span class="tooltip__content">Cerrar Sesión</span>
+                    </a>
+                </li>
+                <!--more items-->
+            </ul>
+        </div>
+        <div class="sidebar__profile">
+            <div class="avatar__wrapper">
+                <img class="avatar" src="assets/profile.jpeg" alt="Foto de Perfil">
+                <div class="online__status"></div>
+            </div>
+            <div class="avatar__name hide">
+                <div class="user-name">Sebastián</div>
+                <div class="email">lopezsebastian.dev@gmail.com</div>
+            </div>
+        </div>
+    </nav>
+    <script src="../capaLogica/script.js"></script>
+</body>
+</html>

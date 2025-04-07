@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - AquaMind</title>
+    <link rel="stylesheet" href="resultado.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="graficas.js" defer></script>
+
+</head>
+
+<body>
+    <div class="resultado-container">
+        <h1>Resultados de tu Consumo de Agua</h1>
+        <p id="score"></p>
+        <button onclick="goBack()">Volver al formulario</button>
+        <div class="chart-container">
+            <canvas id="graficaPastel" width="300" height="300"></canvas>
+            <canvas id="graficaBarras" width="300" height="300"></canvas>
+        </div>
+        <div id="mensajeFinal"></div>
+    </div>
+
+    
+</body>
+
+</html>

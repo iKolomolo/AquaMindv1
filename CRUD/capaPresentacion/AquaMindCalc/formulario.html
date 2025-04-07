@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaMind</title>
+    <link rel="stylesheet" href="formulario.css">
+    <script src="calculadora.js" defer></script>
+    <script src="graficas.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Formulario de Consumo</h1>
+        <form id="formulario-consumo" onsubmit="return calculadoraPuntos(event);">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <label for="q1">1. ¿Cuántas personas viven en tu hogar?</label>
+                <select id="q1" name="q1">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1Opcion1">1</option>
+                    <option value="2Opcion1">2</option>
+                    <option value="3Opcion3">3</option>
+                    <option value="4Opcion4">4</option>
+                    <option value="More4">Mas de 4</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <label for="q2">2. ¿Cuántas veces al día sueles lavar los platos?</label>
+                <select id="q2" name="q2">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1Opcion2">1 vez</option>
+                    <option value="2Opcion2">2 veces</option>
+                    <option value="3Opcion2">3 veces</option>
+                    <option value="4Opcion2">Más de 3 veces</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <label for="q3">3. ¿Con qué frecuencia lavas la ropa? (por semana)?</label>
+                <select id="q3" name="q3">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1Opcion3">1 vez</option>
+                    <option value="2Opcion3">2 veces</option>
+                    <option value="3Opcion3">3 veces</option>
+                    <option value="4Opcion3">Más de 3 veces</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <label for="q4">4. ¿Cuánto tiempo pasas en la ducha, en promedio, cada día?</label>
+                <select id="q4" name="q4">
+                    <option value="">Selecciona una opción</option>
+                    <option value="opción1">menos de 5 minutos</option>
+                    <option value="opcion2">5-10 minutos</option>
+                    <option value="opcion3">10-15 minutos</option>
+                    <option value="opcion4">más de 15 minutos</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <label for="q5">5. ¿Utilizas lavavajillas? En caso afirmativo, ¿con qué frecuencia lo usas por semana?</label>
+                <select id="q5" name="q5">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1Opcion5">No utilizo lavavajillas</option>
+                    <option value="2Opcion5">1-2 veces</option>
+                    <option value="3Opcion5">3-4 veces</option>
+                    <option value="4Opcion5">Más de 4 veces</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="question">
+                <label for="q6">6. ¿Cuántas veces al día utilizas el inodoro?</label>
+                <select id="q6" name="q6">
+                    <option value="1Opcion6">1 vez</option>
+                    <option value="2Opcion6">2 veces</option>
+                    <option value="3Opcion6">3 veces</option>
+                    <option value="4Opcion6">Más de 3 veces</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="question">
+                <label for="q7">7. ¿Utilizas un sistema de riego para el jardín? En caso afirmativo, ¿con qué frecuencia lo usas por semana?</label>
+                <select id="q7" name="q7">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1Opcion7">No utilizo riego</option>
+                    <option value="2Opcion7">1-2 veces</option>
+                    <option value="3Opcion7">3-4 veces</option>
+                    <option value="4Opcion7">Más de 4 veces</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="question">
+                <label for="q8">8. ¿Cuál es el tamaño de tu piscina, si tienes una, y con qué frecuencia la rellenas?</label>
+                <select id="q8" name="q8">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1Opcion8">No tengo piscina</option>
+                    <option value="2Opcion8">Pequeña (menos de 10 m³)</option>
+                    <option value="3Opcion8">Mediana (10-30 m³)</option>
+                    <option value="4Opcion8">Grande (más de 30 m³)</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="question">
+                <label for="q9">9. ¿Tienes algún dispositivo de ahorro de agua instalado (aireadores de grifos, inodoros de bajo flujo, etc.)?</label>
+                <select id="q9" name="q9">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1Opcion9">Sí</option>
+                    <option value="2Opcion9">No</option>
+                </select>
+            </div>
+
+            <!-- Pregunta 10 -->
+            <div class="question">
+                <label for="q10">10. ¿Cuántos litros de agua consumes directamente (bebidas, cocina) cada día?</label>
+                <select id="q10" name="q10">
+                    <option value="">Selecciona una opción</option>
+                    <option value="1Opcion10">Menos de 5 litros</option>
+                    <option value="2Opcion10">5-10 litros</option>
+                    <option value="3Opcion10">10-15 litros</option>
+                    <option value="4Opcion10">Más de 15 litros</option>
+                </select>
+            </div>
+
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </div>
+</body>
+
+</html>
